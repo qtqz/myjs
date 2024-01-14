@@ -1,13 +1,16 @@
 // ==UserScript==
 // @name         飞书文档移除水印
-// @namespace    http://tampermonkey.net/
+// @namespace    qtqz
 // @version      0.1
-// @description  try to take over the world!
-// @author       You
+// @description  移除泄露隐私的水印
+// @author       qtqz
 // @match        https://*.feishu.cn/docx/*
-// @icon         https://www.google.com/s2/favicons?sz=64&domain=feishu.cn
+// @match        https://*.feishu.cn/wiki/*
+// @icon         https://feishu.cn/favicon.ico
 // @grant        none
 // ==/UserScript==
+
+//created 2023.11
 
 (function() {
     'use strict';

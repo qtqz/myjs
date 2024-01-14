@@ -1,18 +1,21 @@
 // ==UserScript==
-// @name         B站仿旧版+隐藏动态页新版按钮
-// @namespace    http://tampermonkey.net/
-// @version      0.2
-// @description  try to take over the world!
-// @author       You
+// @name         B站仿旧版+隐藏动态页新版按钮【纯CSS改动】
+// @namespace    qtqz
+// @version      0.3
+// @description  拒绝老年版页面！缩小视频页部分UI，还原用户动态页转发等UI，隐藏动态首页新版按钮（此脚本并非100%还原旧版）
+// @author       qtqz
 // @match        https://t.bilibili.com/
 // @match        https://www.bilibili.com/video/*
-// @icon         https://www.google.com/s2/favicons?sz=64&domain=bilibili.com
+// @match        https://space.bilibili.com/*
+// @icon         https://www.bilibili.com/favicon.ico
 // @grant        none
 // ==/UserScript==
 
+//created 2023.11
+
 (function () {
     'use strict';
-    setTimeout(() => {
+   
         var node = document.createElement("style");
         node.appendChild(document.createTextNode(`
         .bili-dyn-version-control {
@@ -46,6 +49,16 @@
                 font-size: 14px!important;
             }
         }
+
+        .bili-dyn-item__header {
+            height: 69px!important;
+            padding-top: 23px!important;
+        }
+        .bili-dyn-content__orig.reference {
+            background-color: #f4f5f7!important;
+            margin: 12px 0 0 -12px!important;
+            padding: 12px 14px!important;
+        }
     `));
         var heads = document.getElementsByTagName("head");
         if (heads.length > 0) {
@@ -53,5 +66,9 @@
         } else {
             document.documentElement.appendChild(node);
         }
-    }, 30);
+/*
+font-size: 16px;
+line-height: 1.7em;
+font-weight: 400;
+*/
 })();

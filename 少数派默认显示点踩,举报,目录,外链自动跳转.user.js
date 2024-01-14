@@ -1,14 +1,16 @@
 // ==UserScript==
 // @name         少数派默认显示点踩,举报,目录,外链自动跳转
-// @namespace    http://tampermonkey.net/
+// @namespace    qtqz
 // @version      0.4
-// @description  try to take over the world!
-// @author       You
+// @description  少数派默认显示点踩,举报,目录,外链自动跳转
+// @author       qtqz
 // @match        https://sspai.com/post/*
 // @match        https://sspai.com/link?target=*
-// @icon         https://www.google.com/s2/favicons?domain=sspai.com
+// @icon         https://sspai.com/favicon.ico
 // @grant        none
 // ==/UserScript==
+
+//updated 2023.1
 
 (function() {
     /*

@@ -1,13 +1,15 @@
 // ==UserScript==
 // @name         B站关注列表自动按最近关注排序
-// @namespace    http://tampermonkey.net/
-// @version      0.1
-// @description  try to take over the world!
-// @author       You
-// @match        https://space.bilibili.com/272073535/fans/fo*
+// @namespace    qtqz
+// @version      0.2
+// @description  关注列表自动按最近关注排序，避免在混乱的顺序中找不到人
+// @author       qtqz
+// @match        /https:\/\/space.bilibili.com\/\d*/fans/fo.*/
 // @icon         https://www.bilibili.com/favicon.ico
 // @grant        none
 // ==/UserScript==
+
+//created 2022.8
 
 (function() {
     'use strict';
